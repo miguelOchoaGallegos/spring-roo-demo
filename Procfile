@@ -1,0 +1,1 @@
+web: java -jar target/examplelogin-1.0.0.BUILD-SNAPSHOT.jar

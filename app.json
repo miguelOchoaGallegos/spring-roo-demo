@@ -1,0 +1,5 @@
+{
+  "name": "spring -roo examploe",
+  "description": "demo",
+  "addons": [ "heroku-postgresql" ]
+}

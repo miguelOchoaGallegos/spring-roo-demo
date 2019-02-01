@@ -1,0 +1,39 @@
+// Spring Roo 2.0.0.RELEASE [rev 4a2e9f1] log opened at 2018-12-19 14:51:52
+hint
+project setup --topLevelPackage com.miguelo.exampleLogin
+hint
+// [failed] jpa setup --provider HIBERNATE 
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+hint
+entity jpa --class ~.domain.Producto
+field string --fieldName descripcion
+field date --fieldName fechaVencimiento --type java.util.Date
+field number --fieldName cantidad --type int
+entity jpa --class ~.domain.Cliente
+field string --fieldName nombre
+field string --fieldName apellido
+field string --fieldName telefonoCelular
+field string --fieldName telefonoFijo
+field string --fieldName direccion
+hint
+repository jpa --all
+hint
+service --all
+hint
+web mvc setup
+hint
+web mvc controller --all
+hint
+web mvc view setup --type THYMELEAF 
+web mvc language --code es
+web mvc controller --all --responseType THYMELEAF
+hint
+hint
+hint
+version
+hint
+security setup 
+security setup --provider SPRINGLETS_JPA 
+email sender setup 
+// [failed] email sender setup --host smtp.gmail.com --username miguel.ochoa.gallegos@gmail.com --password @@44069455mm --port 587 --protocol SMTP
+hint
